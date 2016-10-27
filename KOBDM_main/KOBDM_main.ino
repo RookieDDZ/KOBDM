@@ -1,4 +1,13 @@
 /*
+ * Rook_KOBDM_colorScreen
+ * 
+ * Kawasaki
+ * On-Board
+ * Diagnostic
+ * Monitor
+ * 
+ * This program uses the Adafruit raw 1.8" TFT display
+ * 
 KDS Reader - for reading data from the Kawasaki Diagnostic System (KDS) Port
 
 KDS Packet format is:
