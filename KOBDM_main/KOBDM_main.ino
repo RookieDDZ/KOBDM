@@ -136,6 +136,19 @@ void setup()
         // If your TFT's plastic wrap has a Black Tab, use the following:
         lcd.initR(INITR_BLACKTAB);   // initialize a ST7735S chip, black tab
 
+        // Displays Title
+  tft.setRotation(1); //Set to Landscape
+  tft.fillScreen(ST7735_BLACK); //Clear Screen
+  tft.setTextSize(1);
+  tft.setCursor(0, 0);
+  tft.setTextWrap(false);
+  tft.fillScreen(ST7735_BLACK);
+  tft.setCursor(0, 0);
+  tft.setTextColor(ST7735_GREEN);
+  tft.println("INITIALIZING");
+  delay(1000);
+
+
 	pinMode(K_OUT, OUTPUT);
 	pinMode(K_IN, INPUT);
 	
