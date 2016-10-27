@@ -137,16 +137,16 @@ void setup()
         lcd.initR(INITR_BLACKTAB);   // initialize a ST7735S chip, black tab
 
         // Displays Title
-  tft.setRotation(1); //Set to Landscape
-  tft.fillScreen(ST7735_BLACK); //Clear Screen
-  tft.setTextSize(1);
-  tft.setCursor(0, 0);
-  tft.setTextWrap(false);
-  tft.fillScreen(ST7735_BLACK);
-  tft.setCursor(0, 0);
-  tft.setTextColor(ST7735_GREEN);
-  tft.println("INITIALIZING");
-  delay(1000);
+        tft.setRotation(1); //Set to Landscape
+        tft.fillScreen(ST7735_BLACK); //Clear Screen
+        tft.setTextSize(1);
+        tft.setCursor(0, 0);
+        tft.setTextWrap(false);
+        tft.fillScreen(ST7735_BLACK);
+        tft.setCursor(0, 0);
+        tft.setTextColor(ST7735_GREEN);
+        tft.println("INITIALIZING");
+        delay(1000);
 
         //Launch Title Screen
         tftTitle();
