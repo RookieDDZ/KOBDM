@@ -148,7 +148,9 @@ void setup()
   tft.println("INITIALIZING");
   delay(1000);
 
-
+        //Launch Title Screen
+        tftTitle();
+  
 	pinMode(K_OUT, OUTPUT);
 	pinMode(K_IN, INPUT);
 	
@@ -489,4 +491,28 @@ void serial_rx_off() {
 void serial_tx_off() {
 	//UCSR0B &= ~(_BV(TXEN0));  //disable UART TX
 	//delay(20);                 //allow time for buffers to flush
+}
+
+void tftTitle() {
+  // Displays Title
+  tft.setRotation(1); //Set to Landscape
+  tft.fillScreen(ST7735_BLACK); //Clear Screen
+  tft.setTextSize(2);
+  tft.setCursor(0, 0);
+  tft.setTextWrap(false);
+  tft.fillScreen(ST7735_BLACK);
+  tft.setCursor(0, 0);
+  tft.setTextColor(ST7735_GREEN);
+  tft.println("Kawasaki");
+  tft.setCursor(0, 15);
+  tft.setTextColor(ST7735_YELLOW);
+  tft.println("0n-Board");
+  tft.setCursor(0, 30);
+  tft.setTextColor(ST7735_YELLOW);
+  tft.println("Diagnostic");
+  tft.setCursor(0, 45);
+  tft.setTextColor(ST7735_YELLOW);
+  tft.println("Monitor");
+
+  delay(2000);
 }
